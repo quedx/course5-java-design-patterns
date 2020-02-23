@@ -1,0 +1,20 @@
+id: 1
+name: "s1"
+displayName: "sd1"
+enabled: true
+metricList:
+- name: "m1"
+  displayName: "md1"
+  slo: 99.01
+  sloLabel: "label1"
+  unit: "%"
+- name: "m2"
+  displayName: "md2"
+  slo: 99.02
+  sloLabel: "label2"
+  unit: "none"
+inputParams:
+  url: "url"
+  username: "u1"
+  password: "p1"
+  searchIndex: "searchIndex"

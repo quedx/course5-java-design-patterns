@@ -1,4 +1,4 @@
-package com.quedx.tryjava.course5javadesignpatterns.yml;
+package com.quedx.tryjava.course5javadesignpatterns.yml.core;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -7,6 +7,8 @@ import com.fasterxml.jackson.dataformat.yaml.YAMLGenerator;
 import com.quedx.tryjava.course5javadesignpatterns.yml.core.SealBuilder;
 import com.quedx.tryjava.course5javadesignpatterns.yml.model.ElasticSearchParams;
 import com.quedx.tryjava.course5javadesignpatterns.yml.model.Seal;
+import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.io.File;
