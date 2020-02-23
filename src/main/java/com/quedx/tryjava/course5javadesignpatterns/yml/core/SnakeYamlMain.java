@@ -1,12 +1,8 @@
 package com.quedx.tryjava.course5javadesignpatterns.yml.core;
 
-import com.quedx.tryjava.course5javadesignpatterns.yml.model.ElasticSearchParams;
-import com.quedx.tryjava.course5javadesignpatterns.yml.model.Metric;
-import com.quedx.tryjava.course5javadesignpatterns.yml.model.Seal;
 import org.yaml.snakeyaml.Yaml;
 
 import java.io.StringWriter;
-import java.util.Arrays;
 
 public class SnakeYamlMain {
 

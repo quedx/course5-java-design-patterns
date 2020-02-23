@@ -1,12 +1,12 @@
-package com.quedx.tryjava.course5javadesignpatterns.yml.core;
+package com.quedx.tryjava.course5javadesignpatterns.yml;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
 import com.fasterxml.jackson.dataformat.yaml.YAMLGenerator;
+import com.quedx.tryjava.course5javadesignpatterns.yml.core.SealBuilder;
 import com.quedx.tryjava.course5javadesignpatterns.yml.model.ElasticSearchParams;
 import com.quedx.tryjava.course5javadesignpatterns.yml.model.Seal;
-import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.io.File;
@@ -15,7 +15,6 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
 
 @SpringBootTest
 public class JacksonYamlTest {
@@ -112,10 +111,11 @@ public class JacksonYamlTest {
 
 		Seal<ElasticSearchParams> sealOut = readFromYaml(yamlFilePath);
 
-		assertEquals(sealIn.toString(), sealOut.toString());
+		Assertions.assertEquals(sealIn.toString(), sealOut.toString());
 
 
 	}
+
 	@Test
 	public void testWriterAndReaderList() {
 
@@ -128,7 +128,7 @@ public class JacksonYamlTest {
 
 		List<Seal<ElasticSearchParams>> sealOutList = readFromYamlList(yamlFilePath);
 
-		assertEquals(sealInList.toString(), sealOutList.toString());
+		Assertions.assertEquals(sealInList.toString(), sealOutList.toString());
 
 	}
 
